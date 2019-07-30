@@ -16,4 +16,9 @@ cd Embers
 git checkout 1.14
 cd ../
 
+@echo genIntellijRuns for the WHOLE workspace
+
+cd workspace
+./gradlew genIntellijRuns
+
 @echo Done!
