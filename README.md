@@ -22,6 +22,10 @@ There are 3 places you will need to update to add a new project to the workspace
 		source project(':Roots').sourceSets.main
 	}
 	```
+    Also further down, in the dependencies section add the following.
+    ```groovy
+    compile project(':Roots')
+    ```
 3. `setupMysticWorkspace.bat` - This should be updated to allow the automatic checkout of the repo. To do this, add the following (**Note:** Where where is a ... that indicates there is existing code to there)
 	```bash
 	@echo Cloning repos
