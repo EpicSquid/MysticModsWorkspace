@@ -3,7 +3,7 @@
 This is the workspace for the Mystic Mods in 1.14.4+ of Minecraft. Anything that uses any of these mods can be slotted into this workspace through the steps below.
 
 ## Setup
-1. Checkout the Repository
+1. Clone the Repository
 2. Run `setupMysticWorkspace.bat`. This will get *all* the dependencies from their various repos, checkout the correct branches and setup the intellij runs for them.
 3. Open the folder as an intellij project and get to work!
 
