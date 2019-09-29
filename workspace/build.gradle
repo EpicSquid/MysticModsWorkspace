@@ -65,9 +65,6 @@ minecraft {
                 Traverse {
                     source project(':Traverse').sourceSets.main
                 }
-                Druidcraft {
-                    source project(':Druidcraft').sourceSets.main
-                }
                 Firefly {
                     source project(':Firefly').sourceSets.main
                 }
@@ -96,9 +93,6 @@ minecraft {
                 Traverse {
                     source project(':Traverse').sourceSets.main
                 }
-                Druidcraft {
-                    source project(':Druidcraft').sourceSets.main
-                }
                 Firefly {
                     source project(':Firefly').sourceSets.main
                 }
@@ -120,7 +114,6 @@ dependencies {
     compile project(':MysticalWorld')
     compile project(':Embers')
     compile project(':Traverse')
-    compile project(':Druidcraft')
     compile project(':Firefly')
 
     // You may put jars on which you depend on in ./libs or you may define them like so..
