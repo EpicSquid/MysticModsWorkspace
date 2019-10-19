@@ -3,7 +3,6 @@ include 'MysticalLib'
 include 'MysticalWorld'
 include 'Embers'
 include 'Traverse'
-include 'Druidcraft'
 include 'Firefly'
 
 include 'workspace'
