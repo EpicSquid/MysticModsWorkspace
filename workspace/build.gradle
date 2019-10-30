@@ -68,6 +68,9 @@ minecraft {
                 Firefly {
                     source project(':Firefly').sourceSets.main
                 }
+                Glimmering {
+                    source project(':Glimmering').sourceSets.main
+                }
             }
         }
 
@@ -96,6 +99,9 @@ minecraft {
                 Firefly {
                     source project(':Firefly').sourceSets.main
                 }
+                Glimmering {
+                    source project(':Glimmering').sourceSets.main
+                }
             }
         }
     }
@@ -115,6 +121,7 @@ dependencies {
     compile project(':Embers')
     compile project(':Traverse')
     compile project(':Firefly')
+    compile project(':Glimmering')
 
     // You may put jars on which you depend on in ./libs or you may define them like so..
     // compile "some.group:artifact:version:classifier"

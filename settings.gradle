@@ -4,5 +4,6 @@ include 'MysticalWorld'
 include 'Embers'
 include 'Traverse'
 include 'Firefly'
+include 'Glimmering'
 
 include 'workspace'
