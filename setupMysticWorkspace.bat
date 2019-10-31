@@ -6,6 +6,7 @@ git clone https://github.com/MysticMods/Embers.git
 git clone https://github.com/MysticMods/Traverse.git
 git clone https://github.com/MysticMods/Firefly.git
 git clone https://github.com/MysticMods/Glimmering.git
+git clone https://github.com/duely/dwmh.git
 
 @echo Switching to 1.14.4 branches
 cd MysticalLib
@@ -17,6 +18,9 @@ cd ../
 cd Embers
 git checkout 1.14
 cd ../
+cd dwmh
+git checkout 1.14
+cd ..
 
 @echo genIntellijRuns for the WHOLE workspace
 
