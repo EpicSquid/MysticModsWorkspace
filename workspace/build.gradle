@@ -71,6 +71,9 @@ minecraft {
                 Glimmering {
                     source project(':Glimmering').sourceSets.main
                 }
+                GadgetryCore {
+                    source project(':GadgetryCore').sourceSets.main
+                }
             }
         }
 
@@ -102,6 +105,9 @@ minecraft {
                 Glimmering {
                     source project(':Glimmering').sourceSets.main
                 }
+                GadgetryCore {
+                    source project(':GadgetryCore').sourceSets.main
+                }
             }
         }
     }
@@ -122,6 +128,7 @@ dependencies {
     compile project(':Traverse')
     compile project(':Firefly')
     compile project(':Glimmering')
+    compile project(':GadgetryCore')
 
     // You may put jars on which you depend on in ./libs or you may define them like so..
     // compile "some.group:artifact:version:classifier"
