@@ -6,5 +6,6 @@ include 'Traverse'
 include 'Firefly'
 include 'Glimmering'
 include 'dwmh'
+include 'ArcaneArchives'
 
 include 'workspace'
