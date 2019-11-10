@@ -5,6 +5,8 @@ include 'Embers'
 include 'Traverse'
 include 'Firefly'
 include 'Glimmering'
+include 'dwmh'
+include 'ArcaneArchives'
 include 'GadgetryCore'
 
 include 'workspace'
