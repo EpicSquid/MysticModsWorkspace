@@ -21,6 +21,10 @@ repositories {
     maven { // JEI
         url "https://dvs1.progwml6.com/files/maven"
     }
+    maven {
+        name = "JER"
+        url = "https://dl.bintray.com/way2muchnoise/dev"
+    }
 }
 
 version = '1.0'
@@ -177,6 +181,7 @@ dependencies {
 
     compileOnly fg.deobf("mezz.jei:jei-1.14.4:6.0.0.18:api")
     runtimeOnly fg.deobf("mezz.jei:jei-1.14.4:6.0.0.18")
+    compile("jeresources:JustEnoughResources-1.14.4:0.10.0.66")
 
     compile project(':MysticalLib')
     compile project(':MysticalWorld')
