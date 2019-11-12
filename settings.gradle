@@ -8,5 +8,6 @@ include 'Glimmering'
 include 'dwmh'
 include 'ArcaneArchives'
 include 'GadgetryCore'
+include 'MysticalMachinery'
 
 include 'workspace'
