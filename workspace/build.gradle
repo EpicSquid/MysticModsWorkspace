@@ -44,7 +44,7 @@ minecraft {
     // Simply re-run your setup task after changing the mappings to update your workspace.
     mappings channel: 'snapshot', version: "${mcp_mappings}"
     // makeObfSourceJar = false // an Srg named sources jar is made by default. uncomment this to disable.
-    
+
 //    accessTransformer = file('accesstransformer.cfg')
 
     // Default run configurations.
@@ -136,7 +136,7 @@ minecraft {
             }
         }
 
-        dataMysticalWorld {
+        data {
             workingDirectory project.file('run')
 
             environment 'target', 'fmluserdevdata'
@@ -147,149 +147,19 @@ minecraft {
             // Recommended logging level for the console
             property 'forge.logging.console.level', 'debug'
 
-            args '--mod', 'mysticalworld', '--all', '--output', project(':MysticalWorld').file('src/generated/resources/'), '--existing', project(':MysticalWorld').sourceSets.main.resources.srcDirs[0], '--existing', project(':MysticalWorld').sourceSets.main.resources.srcDirs[1]
-            args '--mod', 'gadgetrycore', '--all', '--output', project(':GadgetryCore').file('src/generated/resources/'), '--existing', project(':GadgetryCore').sourceSets.main.resources.srcDirs[0], '--existing', project(':GadgetryCore').sourceSets.main.resources.srcDirs[1]
+            // TODO: Fix this somehow?
+            // ----------------------------------------------
+            // For data generation, you'll have to comment in/out each block, reimport
+            // gradle and then re-run genIntelliJ runs. Then run your data generator.
+            // Then weep. And make sure you use the workspace classpath.
 
-            mods {
-                MysticalLib {
-                    source project(':MysticalLib').sourceSets.main
-                }
-                MysticalWorld {
-                    source project(':MysticalWorld').sourceSets.main
-                }
-                Embers {
-                    source project(':Embers').sourceSets.main
-                }
-                Traverse {
-                    source project(':Traverse').sourceSets.main
-                }
-                Firefly {
-                    source project(':Firefly').sourceSets.main
-                }
-                Glimmering {
-                    source project(':Glimmering').sourceSets.main
-                }
-                dwmh {
-                    source project(':dwmh').sourceSets.main
-                }
-                ArcaneArchives {
-                    source project(':ArcaneArchives').sourceSets.main
-                }
-                GadgetryCore {
-                    source project(':GadgetryCore').sourceSets.main
-                }
-                MysticalMachinery {
-                    source project(':MysticalMachinery').sourceSets.main
-                }
-            }
-        }
+            //args '--mod', 'mysticalworld', '--all', '--output', project(':MysticalWorld').file('src/generated/resources/'), '--existing', project(':MysticalWorld').sourceSets.main.resources.srcDirs[0], '--existing', project(':MysticalWorld').sourceSets.main.resources.srcDirs[1]
 
-        dataGadgetry {
-            workingDirectory project.file('run')
-
-            environment 'target', 'fmluserdevdata'
-
-            // Recommended logging data for a userdev environment
-            //property 'forge.logging.markers', 'SCAN,REGISTRIES,REGISTRYDUMP'
-
-            // Recommended logging level for the console
-            property 'forge.logging.console.level', 'debug'
-
-            args '--mod', 'gadgetrycore', '--all', '--output', project(':GadgetryCore').file('src/generated/resources/'), '--existing', project(':GadgetryCore').sourceSets.main.resources.srcDirs[0], '--existing', project(':GadgetryCore').sourceSets.main.resources.srcDirs[1]
-
-            mods {
-                MysticalLib {
-                    source project(':MysticalLib').sourceSets.main
-                }
-                MysticalWorld {
-                    source project(':MysticalWorld').sourceSets.main
-                }
-                Embers {
-                    source project(':Embers').sourceSets.main
-                }
-                Traverse {
-                    source project(':Traverse').sourceSets.main
-                }
-                Firefly {
-                    source project(':Firefly').sourceSets.main
-                }
-                Glimmering {
-                    source project(':Glimmering').sourceSets.main
-                }
-                dwmh {
-                    source project(':dwmh').sourceSets.main
-                }
-                ArcaneArchives {
-                    source project(':ArcaneArchives').sourceSets.main
-                }
-                GadgetryCore {
-                    source project(':GadgetryCore').sourceSets.main
-                }
-                MysticalMachinery {
-                    source project(':MysticalMachinery').sourceSets.main
-                }
-            }
-        }
-
-        dataMysticalMachinery {
-            workingDirectory project.file('run')
-
-            environment 'target', 'fmluserdevdata'
-
-            // Recommended logging data for a userdev environment
-            //property 'forge.logging.markers', 'SCAN,REGISTRIES,REGISTRYDUMP'
-
-            // Recommended logging level for the console
-            property 'forge.logging.console.level', 'debug'
-
-            args '--mod', 'mysticalmachinery', '--all', '--output', project(':MysticalMachinery').file('src/generated/resources/'), '--existing', project(':MysticalMachinery').sourceSets.main.resources.srcDirs[0], '--existing', project(':MysticalMachinery').sourceSets.main.resources.srcDirs[1]
-
-            mods {
-                MysticalLib {
-                    source project(':MysticalLib').sourceSets.main
-                }
-                MysticalWorld {
-                    source project(':MysticalWorld').sourceSets.main
-                }
-                Embers {
-                    source project(':Embers').sourceSets.main
-                }
-                Traverse {
-                    source project(':Traverse').sourceSets.main
-                }
-                Firefly {
-                    source project(':Firefly').sourceSets.main
-                }
-                Glimmering {
-                    source project(':Glimmering').sourceSets.main
-                }
-                dwmh {
-                    source project(':dwmh').sourceSets.main
-                }
-                ArcaneArchives {
-                    source project(':ArcaneArchives').sourceSets.main
-                }
-                GadgetryCore {
-                    source project(':GadgetryCore').sourceSets.main
-                }
-                MysticalMachinery {
-                    source project(':MysticalMachinery').sourceSets.main
-                }
-            }
-        }
-
-        dataArcaneArchives {
-            workingDirectory project.file('run')
-
-            environment 'target', 'fmluserdevdata'
-
-            // Recommended logging data for a userdev environment
-            //property 'forge.logging.markers', 'SCAN,REGISTRIES,REGISTRYDUMP'
-
-            // Recommended logging level for the console
-            property 'forge.logging.console.level', 'debug'
+            //args '--mod', 'gadgetrycore', '--all', '--output', project(':GadgetryCore').file('src/generated/resources/'), '--existing', project(':GadgetryCore').sourceSets.main.resources.srcDirs[0], '--existing', project(':GadgetryCore').sourceSets.main.resources.srcDirs[1]
 
             args '--mod', 'arcanearchives', '--all', '--output', project(':ArcaneArchives').file('src/generated/resources/'), '--existing', project(':ArcaneArchives').sourceSets.main.resources.srcDirs[0], '--existing', project(':ArcaneArchives').sourceSets.main.resources.srcDirs[1]
+
+            //args '--mod', 'mysticalmachinery', '--all', '--output', project(':MysticalMachinery').file('src/generated/resources/'), '--existing', project(':MysticalMachinery').sourceSets.main.resources.srcDirs[0], '--existing', project(':MysticalMachinery').sourceSets.main.resources.srcDirs[1]
 
             mods {
                 MysticalLib {
@@ -375,13 +245,13 @@ dependencies {
 jar {
     manifest {
         attributes([
-            "Specification-Title": "examplemod",
-            "Specification-Vendor": "examplemodsareus",
-            "Specification-Version": "1", // We are version 1 of ourselves
-            "Implementation-Title": project.name,
-            "Implementation-Version": "${version}",
-            "Implementation-Vendor" :"examplemodsareus",
-            "Implementation-Timestamp": new Date().format("yyyy-MM-dd'T'HH:mm:ssZ")
+                "Specification-Title"     : "examplemod",
+                "Specification-Vendor"    : "examplemodsareus",
+                "Specification-Version"   : "1", // We are version 1 of ourselves
+                "Implementation-Title"    : project.name,
+                "Implementation-Version"  : "${version}",
+                "Implementation-Vendor"   : "examplemodsareus",
+                "Implementation-Timestamp": new Date().format("yyyy-MM-dd'T'HH:mm:ssZ")
         ])
     }
 }
