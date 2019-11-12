@@ -138,7 +138,8 @@ minecraft {
             // Recommended logging level for the console
             property 'forge.logging.console.level', 'debug'
 
-            args '--mod', 'mysticalworld', '--all', '--output', project(':MysticalWorld').file('src/generated/resources/'), '--existing', project(':MysticalWorld').sourceSets.main.resources.srcDirs[0], '--existing', project(':MysticalWorld').sourceSets.main.resources.srcDirs[1]
+//            args '--mod', 'mysticalworld', '--all', '--output', project(':MysticalWorld').file('src/generated/resources/'), '--existing', project(':MysticalWorld').sourceSets.main.resources.srcDirs[0], '--existing', project(':MysticalWorld').sourceSets.main.resources.srcDirs[1]
+            args '--mod', 'gadgetrycore', '--all', '--output', project(':GadgetryCore').file('src/generated/resources/'), '--existing', project(':GadgetryCore').sourceSets.main.resources.srcDirs[0], '--existing', project(':GadgetryCore').sourceSets.main.resources.srcDirs[1]
 
             mods {
                 MysticalLib {
@@ -165,6 +166,9 @@ minecraft {
                 /*ArcaneArchives {
                     source project(':ArcaneArchives').sourceSets.main
                 }*/
+                GadgetryCore {
+                    source project(':GadgetryCore').sourceSets.main
+                }
             }
         }
     }
@@ -179,9 +183,9 @@ dependencies {
 //    compileOnly fg.deobf("mezz.jei:jei-${jei_version}:api")
 //    runtimeOnly fg.deobf("mezz.jei:jei-${jei_version}")
 
-    compileOnly fg.deobf("mezz.jei:jei-1.14.4:6.0.0.18:api")
-    runtimeOnly fg.deobf("mezz.jei:jei-1.14.4:6.0.0.18")
-    compile("jeresources:JustEnoughResources-1.14.4:0.10.0.66")
+    compileOnly fg.deobf("mezz.jei:jei-1.14.4:6.0.0.24:api")
+    runtimeOnly fg.deobf("mezz.jei:jei-1.14.4:6.0.0.24")
+    compileOnly("jeresources:JustEnoughResources-1.14.4:0.10.0.66")
 
     compile project(':MysticalLib')
     compile project(':MysticalWorld')
