@@ -9,5 +9,6 @@ include 'dwmh'
 include 'ArcaneArchives'
 include 'GadgetryCore'
 include 'MysticalMachinery'
+include 'EmsFarming'
 
 include 'workspace'

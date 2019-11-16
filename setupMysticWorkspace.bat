@@ -10,6 +10,7 @@ git clone https://github.com/duely/dwmh.git
 git clone https://github.com/AranaiRa/ArcaneArchives.git
 git clone https://github.com/MysticMods/GadgetryCore.git
 git clone https://github.com/MysticMods/MysticalMachinery.git
+git clone https://github.com/MysticMods/EmsFarming.git
 
 @echo Switching to 1.14.4 branches
 cd MysticalLib

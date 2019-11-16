@@ -192,6 +192,9 @@ minecraft {
                 MysticalMachinery {
                     source project(':MysticalMachinery').sourceSets.main
                 }
+                MysticalMachinery {
+                    source project(':EmsFarming').sourceSets.main
+                }
             }
         }
     }
@@ -220,6 +223,7 @@ dependencies {
     compile project(':ArcaneArchives')
     compile project(':GadgetryCore')
     compile project(':MysticalMachinery')
+    compile project(':EmsFarming')
 
     // You may put jars on which you depend on in ./libs or you may define them like so..
     // compile "some.group:artifact:version:classifier"
