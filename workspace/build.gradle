@@ -90,6 +90,9 @@ minecraft {
                 MysticalMachinery {
                     source project(':MysticalMachinery').sourceSets.main
                 }
+                EmsFarming {
+                    source project(':EmsFarming').sourceSets.main
+                }
             }
         }
 
@@ -132,6 +135,9 @@ minecraft {
                 }
                 MysticalMachinery {
                     source project(':MysticalMachinery').sourceSets.main
+                }
+                EmsFarming {
+                    source project(':EmsFarming').sourceSets.main
                 }
             }
         }
@@ -193,6 +199,9 @@ minecraft {
                     source project(':MysticalMachinery').sourceSets.main
                 }
                 MysticalMachinery {
+                    source project(':EmsFarming').sourceSets.main
+                }
+                EmsFarming {
                     source project(':EmsFarming').sourceSets.main
                 }
             }
