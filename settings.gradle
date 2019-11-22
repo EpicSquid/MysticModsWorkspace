@@ -1,4 +1,4 @@
-rootProject.name = 'Mystic Mods'
+rootProject.name = 'Mystic Mods (Misc Noob)'
 include 'MysticalLib'
 include 'Glimmering'
 include 'dwmh'
