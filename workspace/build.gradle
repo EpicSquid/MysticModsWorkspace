@@ -60,6 +60,9 @@ minecraft {
             // property 'forge.logging.console.level', 'debug'
 
             mods {
+                /*Roots {
+                    source project('Roots').sourceSets.main
+                }*/
                 MysticalLib {
                     source project(':MysticalLib').sourceSets.main
                 }
@@ -106,6 +109,9 @@ minecraft {
             // property 'forge.logging.console.level', 'debug'
 
             mods {
+                /*Roots {
+                    source project (':Roots').sourceSets.main
+                }*/
                 MysticalLib {
                     source project(':MysticalLib').sourceSets.main
                 }
@@ -167,9 +173,14 @@ minecraft {
 
             //args '--mod', 'mysticalmachinery', '--all', '--output', project(':MysticalMachinery').file('src/generated/resources/'), '--existing', project(':MysticalMachinery').sourceSets.main.resources.srcDirs[0], '--existing', project(':MysticalMachinery').sourceSets.main.resources.srcDirs[1]
 
-            args '--mod', 'glimmering', '--all', '--output', project(':Glimmering').file('src/generated/resources/'), '--existing', project(':Glimmering').sourceSets.main.resources.srcDirs[0], '--existing', project(':Glimmering').sourceSets.main.resources.srcDirs[1]
+            //args '--mod', 'glimmering', '--all', '--output', project(':Glimmering').file('src/generated/resources/'), '--existing', project(':Glimmering').sourceSets.main.resources.srcDirs[0], '--existing', project(':Glimmering').sourceSets.main.resources.srcDirs[1]
+
+            //args '--mod', 'roots', '--all', '--output', project(':Roots').file('src/generated/resources/'), '--existing', project(':Roots').sourceSets.main.resources.srcDirs[0], '--existing', project(':Roots').sourceSets.main.resources.srcDirs[1]
 
             mods {
+                /*Roots {
+                    source project(':MysticalLib').sourceSets.main
+                }*/
                 MysticalLib {
                     source project(':MysticalLib').sourceSets.main
                 }
@@ -232,6 +243,7 @@ dependencies {
     compile project(':ArcaneArchives')
     compile project(':GadgetryCore')
     compile project(':EmsFarming')
+    //compile project(':Roots')
 
     // You may put jars on which you depend on in ./libs or you may define them like so..
     // compile "some.group:artifact:version:classifier"

@@ -11,6 +11,7 @@ git clone https://github.com/AranaiRa/ArcaneArchives.git
 git clone https://github.com/MysticMods/GadgetryCore.git
 git clone https://github.com/MysticMods/MysticalMachinery.git
 git clone https://github.com/MysticMods/EmsFarming.git
+git clone https://github.com/MysticMods/Roots.git
 
 @echo Switching to 1.14.4 branches
 cd MysticalLib
@@ -29,6 +30,9 @@ cd ArcaneArchives
 git checkout 1.14
 cd ..
 cd GadgetryCore
+git checkout 1.14
+cd ../
+cd Roots
 git checkout 1.14
 cd ../
 

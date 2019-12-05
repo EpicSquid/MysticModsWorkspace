@@ -10,5 +10,6 @@ include 'Firefly'
 include 'ArcaneArchives'
 include 'GadgetryCore'
 include 'EmsFarming'
+include 'Roots'
 
 include 'workspace'
