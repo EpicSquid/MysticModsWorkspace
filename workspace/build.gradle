@@ -60,9 +60,9 @@ minecraft {
             // property 'forge.logging.console.level', 'debug'
 
             mods {
-                /*Roots {
-                    source project('Roots').sourceSets.main
-                }*/
+                Roots {
+                    source project(':Roots').sourceSets.main
+                }
                 MysticalLib {
                     source project(':MysticalLib').sourceSets.main
                 }
@@ -109,9 +109,9 @@ minecraft {
             // property 'forge.logging.console.level', 'debug'
 
             mods {
-                /*Roots {
+                Roots {
                     source project (':Roots').sourceSets.main
-                }*/
+                }
                 MysticalLib {
                     source project(':MysticalLib').sourceSets.main
                 }
@@ -165,7 +165,7 @@ minecraft {
             // gradle and then re-run genIntelliJ runs. Then run your data generator.
             // Then weep. And make sure you use the workspace classpath.
 
-            //args '--mod', 'mysticalworld', '--all', '--output', project(':MysticalWorld').file('src/generated/resources/'), '--existing', project(':MysticalWorld').sourceSets.main.resources.srcDirs[0], '--existing', project(':MysticalWorld').sourceSets.main.resources.srcDirs[1]
+            args '--mod', 'mysticalworld', '--all', '--output', project(':MysticalWorld').file('src/generated/resources/'), '--existing', project(':MysticalWorld').sourceSets.main.resources.srcDirs[0], '--existing', project(':MysticalWorld').sourceSets.main.resources.srcDirs[1]
 
             //args '--mod', 'gadgetrycore', '--all', '--output', project(':GadgetryCore').file('src/generated/resources/'), '--existing', project(':GadgetryCore').sourceSets.main.resources.srcDirs[0], '--existing', project(':GadgetryCore').sourceSets.main.resources.srcDirs[1]
 
@@ -178,9 +178,9 @@ minecraft {
             //args '--mod', 'roots', '--all', '--output', project(':Roots').file('src/generated/resources/'), '--existing', project(':Roots').sourceSets.main.resources.srcDirs[0], '--existing', project(':Roots').sourceSets.main.resources.srcDirs[1]
 
             mods {
-                /*Roots {
-                    source project(':MysticalLib').sourceSets.main
-                }*/
+                Roots {
+                    source project(':Roots').sourceSets.main
+                }
                 MysticalLib {
                     source project(':MysticalLib').sourceSets.main
                 }
@@ -243,7 +243,7 @@ dependencies {
     compile project(':ArcaneArchives')
     compile project(':GadgetryCore')
     compile project(':EmsFarming')
-    //compile project(':Roots')
+    compile project(':Roots')
 
     // You may put jars on which you depend on in ./libs or you may define them like so..
     // compile "some.group:artifact:version:classifier"
