@@ -228,9 +228,12 @@ dependencies {
 //    compileOnly fg.deobf("mezz.jei:jei-${jei_version}:api")
 //    runtimeOnly fg.deobf("mezz.jei:jei-${jei_version}")
 
-    compileOnly fg.deobf("mezz.jei:jei-1.14.4:6.0.0.24:api")
-    runtimeOnly fg.deobf("mezz.jei:jei-1.14.4:6.0.0.24")
+    compileOnly fg.deobf("mezz.jei:jei-${jei_version}:api")
+    runtimeOnly fg.deobf("mezz.jei:jei-${jei_version}")
     compileOnly("jeresources:JustEnoughResources-1.14.4:0.10.0.66")
+    runtimeOnly fg.deobf("vazkii.patchouli:Patchouli:${patchouli_version}") {
+        transitive = false
+    }
 
     compile project(':MysticalLib')
     compile project(':MysticalWorld')
