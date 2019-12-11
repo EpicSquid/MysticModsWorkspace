@@ -78,9 +78,9 @@ minecraft {
                 Firefly {
                     source project(':Firefly').sourceSets.main
                 }
-                Glimmering {
+/*                Glimmering {
                     source project(':Glimmering').sourceSets.main
-                }
+                }*/
                 dwmh {
                     source project(':dwmh').sourceSets.main
                 }
@@ -127,9 +127,9 @@ minecraft {
                 Firefly {
                     source project(':Firefly').sourceSets.main
                 }
-                Glimmering {
+/*                Glimmering {
                     source project(':Glimmering').sourceSets.main
-                }
+                }*/
                 dwmh {
                     source project(':dwmh').sourceSets.main
                 }
@@ -196,9 +196,9 @@ minecraft {
                 Firefly {
                     source project(':Firefly').sourceSets.main
                 }
-                Glimmering {
+/*                Glimmering {
                     source project(':Glimmering').sourceSets.main
-                }
+                }*/
                 dwmh {
                     source project(':dwmh').sourceSets.main
                 }
@@ -237,7 +237,7 @@ dependencies {
 
     compile project(':MysticalLib')
     compile project(':MysticalWorld')
-    compile project(':Glimmering')
+    //compile project(':Glimmering')
     compile project(':dwmh')
     compile project(':MysticalMachinery')
     compile project(':Embers')

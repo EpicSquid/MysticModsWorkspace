@@ -5,7 +5,7 @@ git clone https://github.com/MysticMods/MysticalWorld.git
 git clone https://github.com/MysticMods/Embers.git
 git clone https://github.com/MysticMods/Traverse.git
 git clone https://github.com/MysticMods/Firefly.git
-git clone https://github.com/MysticMods/Glimmering.git
+@echo skipping git clone https://github.com/MysticMods/Glimmering.git
 git clone https://github.com/duely/dwmh.git
 git clone https://github.com/AranaiRa/ArcaneArchives.git
 git clone https://github.com/MysticMods/GadgetryCore.git
