@@ -25,6 +25,10 @@ repositories {
         name = "JER"
         url = "https://dl.bintray.com/way2muchnoise/dev"
     }
+    maven {
+        name = "Jared"
+        url = "https://maven.blamejared.com"
+    }
     flatDir {
         dir 'libs'
     }
@@ -228,12 +232,9 @@ dependencies {
 //    compileOnly fg.deobf("mezz.jei:jei-${jei_version}:api")
 //    runtimeOnly fg.deobf("mezz.jei:jei-${jei_version}")
 
-    compileOnly fg.deobf("mezz.jei:jei-${jei_version}:api")
     runtimeOnly fg.deobf("mezz.jei:jei-${jei_version}")
     compileOnly("jeresources:JustEnoughResources-1.14.4:0.10.0.66")
-    runtimeOnly fg.deobf("vazkii.patchouli:Patchouli:${patchouli_version}") {
-        transitive = false
-    }
+    runtimeOnly fg.deobf("vazkii.patchouli:Patchouli:${patchouli_version}")
 
     compile project(':MysticalLib')
     compile project(':MysticalWorld')
