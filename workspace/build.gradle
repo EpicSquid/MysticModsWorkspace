@@ -64,42 +64,42 @@ minecraft {
             // property 'forge.logging.console.level', 'debug'
 
             mods {
-                Roots {
-                    source project(':Roots').sourceSets.main
-                }
+                // Roots {
+                //     source project(':Roots').sourceSets.main
+                // }
                 MysticalLib {
                     source project(':MysticalLib').sourceSets.main
                 }
-                MysticalWorld {
-                    source project(':MysticalWorld').sourceSets.main
-                }
-                Embers {
-                    source project(':Embers').sourceSets.main
-                }
-                Traverse {
-                    source project(':Traverse').sourceSets.main
-                }
-                Firefly {
-                    source project(':Firefly').sourceSets.main
-                }
+                // MysticalWorld {
+                //     source project(':MysticalWorld').sourceSets.main
+                // }
+                // Embers {
+                //     source project(':Embers').sourceSets.main
+                // }
+                // Traverse {
+                //     source project(':Traverse').sourceSets.main
+                // }
+                // Firefly {
+                //     source project(':Firefly').sourceSets.main
+                // }
 /*                Glimmering {
                     source project(':Glimmering').sourceSets.main
                 }*/
-                dwmh {
-                    source project(':dwmh').sourceSets.main
-                }
-                ArcaneArchives {
-                    source project(':ArcaneArchives').sourceSets.main
-                }
-                GadgetryCore {
-                    source project(':GadgetryCore').sourceSets.main
-                }
-                MysticalMachinery {
-                    source project(':MysticalMachinery').sourceSets.main
-                }
-                EmsFarming {
-                    source project(':EmsFarming').sourceSets.main
-                }
+                // dwmh {
+                //     source project(':dwmh').sourceSets.main
+                // }
+                // ArcaneArchives {
+                //     source project(':ArcaneArchives').sourceSets.main
+                // }
+                // GadgetryCore {
+                //     source project(':GadgetryCore').sourceSets.main
+                // }
+                // MysticalMachinery {
+                //     source project(':MysticalMachinery').sourceSets.main
+                // }
+                // EmsFarming {
+                //     source project(':EmsFarming').sourceSets.main
+                // }
             }
         }
 
@@ -113,42 +113,42 @@ minecraft {
             // property 'forge.logging.console.level', 'debug'
 
             mods {
-                Roots {
-                    source project (':Roots').sourceSets.main
-                }
+                // Roots {
+                //     source project (':Roots').sourceSets.main
+                // }
                 MysticalLib {
                     source project(':MysticalLib').sourceSets.main
                 }
-                MysticalWorld {
-                    source project(':MysticalWorld').sourceSets.main
-                }
-                Embers {
-                    source project(':Embers').sourceSets.main
-                }
-                Traverse {
-                    source project(':Traverse').sourceSets.main
-                }
-                Firefly {
-                    source project(':Firefly').sourceSets.main
-                }
+                // MysticalWorld {
+                //     source project(':MysticalWorld').sourceSets.main
+                // }
+                // Embers {
+                //     source project(':Embers').sourceSets.main
+                // }
+                // Traverse {
+                //     source project(':Traverse').sourceSets.main
+                // }
+                // Firefly {
+                //     source project(':Firefly').sourceSets.main
+                // }
 /*                Glimmering {
                     source project(':Glimmering').sourceSets.main
                 }*/
-                dwmh {
-                    source project(':dwmh').sourceSets.main
-                }
-                ArcaneArchives {
-                    source project(':ArcaneArchives').sourceSets.main
-                }
-                GadgetryCore {
-                    source project(':GadgetryCore').sourceSets.main
-                }
-                MysticalMachinery {
-                    source project(':MysticalMachinery').sourceSets.main
-                }
-                EmsFarming {
-                    source project(':EmsFarming').sourceSets.main
-                }
+                // dwmh {
+                //     source project(':dwmh').sourceSets.main
+                // }
+                // ArcaneArchives {
+                //     source project(':ArcaneArchives').sourceSets.main
+                // }
+                // GadgetryCore {
+                //     source project(':GadgetryCore').sourceSets.main
+                // }
+                // MysticalMachinery {
+                //     source project(':MysticalMachinery').sourceSets.main
+                // }
+                // EmsFarming {
+                //     source project(':EmsFarming').sourceSets.main
+                // }
             }
         }
 
@@ -169,7 +169,7 @@ minecraft {
             // gradle and then re-run genIntelliJ runs. Then run your data generator.
             // Then weep. And make sure you use the workspace classpath.
 
-            args '--mod', 'mysticalworld', '--all', '--output', project(':MysticalWorld').file('src/generated/resources/'), '--existing', project(':MysticalWorld').sourceSets.main.resources.srcDirs[0], '--existing', project(':MysticalWorld').sourceSets.main.resources.srcDirs[1]
+            // args '--mod', 'mysticalworld', '--all', '--output', project(':MysticalWorld').file('src/generated/resources/'), '--existing', project(':MysticalWorld').sourceSets.main.resources.srcDirs[0], '--existing', project(':MysticalWorld').sourceSets.main.resources.srcDirs[1]
 
             //args '--mod', 'gadgetrycore', '--all', '--output', project(':GadgetryCore').file('src/generated/resources/'), '--existing', project(':GadgetryCore').sourceSets.main.resources.srcDirs[0], '--existing', project(':GadgetryCore').sourceSets.main.resources.srcDirs[1]
 
@@ -182,42 +182,42 @@ minecraft {
             //args '--mod', 'roots', '--all', '--output', project(':Roots').file('src/generated/resources/'), '--existing', project(':Roots').sourceSets.main.resources.srcDirs[0], '--existing', project(':Roots').sourceSets.main.resources.srcDirs[1]
 
             mods {
-                Roots {
-                    source project(':Roots').sourceSets.main
-                }
+                // Roots {
+                //     source project(':Roots').sourceSets.main
+                // }
                 MysticalLib {
                     source project(':MysticalLib').sourceSets.main
                 }
-                MysticalWorld {
-                    source project(':MysticalWorld').sourceSets.main
-                }
-                Embers {
-                    source project(':Embers').sourceSets.main
-                }
-                Traverse {
-                    source project(':Traverse').sourceSets.main
-                }
-                Firefly {
-                    source project(':Firefly').sourceSets.main
-                }
+                // MysticalWorld {
+                //     source project(':MysticalWorld').sourceSets.main
+                // }
+                // Embers {
+                //     source project(':Embers').sourceSets.main
+                // }
+                // Traverse {
+                //     source project(':Traverse').sourceSets.main
+                // }
+                // Firefly {
+                //     source project(':Firefly').sourceSets.main
+                // }
 /*                Glimmering {
                     source project(':Glimmering').sourceSets.main
                 }*/
-                dwmh {
-                    source project(':dwmh').sourceSets.main
-                }
-                ArcaneArchives {
-                    source project(':ArcaneArchives').sourceSets.main
-                }
-                GadgetryCore {
-                    source project(':GadgetryCore').sourceSets.main
-                }
-                MysticalMachinery {
-                    source project(':MysticalMachinery').sourceSets.main
-                }
-                EmsFarming {
-                    source project(':EmsFarming').sourceSets.main
-                }
+                // dwmh {
+                //     source project(':dwmh').sourceSets.main
+                // }
+                // ArcaneArchives {
+                //     source project(':ArcaneArchives').sourceSets.main
+                // }
+                // GadgetryCore {
+                //     source project(':GadgetryCore').sourceSets.main
+                // }
+                // MysticalMachinery {
+                //     source project(':MysticalMachinery').sourceSets.main
+                // }
+                // EmsFarming {
+                //     source project(':EmsFarming').sourceSets.main
+                // }
             }
         }
     }
@@ -233,21 +233,21 @@ dependencies {
 //    runtimeOnly fg.deobf("mezz.jei:jei-${jei_version}")
 
     runtimeOnly fg.deobf("mezz.jei:jei-${jei_version}")
-    compileOnly("jeresources:JustEnoughResources-1.14.4:0.10.0.66")
+    // compileOnly("jeresources:JustEnoughResources-1.14.4:0.10.0.66")
     runtimeOnly fg.deobf("vazkii.patchouli:Patchouli:${patchouli_version}")
 
     compile project(':MysticalLib')
-    compile project(':MysticalWorld')
+    // compile project(':MysticalWorld')
     //compile project(':Glimmering')
-    compile project(':dwmh')
-    compile project(':MysticalMachinery')
-    compile project(':Embers')
-    compile project(':Traverse')
-    compile project(':Firefly')
-    compile project(':ArcaneArchives')
-    compile project(':GadgetryCore')
-    compile project(':EmsFarming')
-    compile project(':Roots')
+    // compile project(':dwmh')
+    // compile project(':MysticalMachinery')
+    // compile project(':Embers')
+    // compile project(':Traverse')
+    // compile project(':Firefly')
+    // compile project(':ArcaneArchives')
+    // compile project(':GadgetryCore')
+    // compile project(':EmsFarming')
+    // compile project(':Roots')
 
     // You may put jars on which you depend on in ./libs or you may define them like so..
     // compile "some.group:artifact:version:classifier"

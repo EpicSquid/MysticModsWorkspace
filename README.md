@@ -1,6 +1,6 @@
-# Mystic Mods Workspace 1.14.4+
+# Mystic Mods Workspace 1.15.2+
 
-This is the workspace for the Mystic Mods in 1.14.4+ of Minecraft. Anything that uses any of these mods can be slotted into this workspace through the steps below.
+This is the workspace for the Mystic Mods in 1.15.2+ of Minecraft. Anything that uses any of these mods can be slotted into this workspace through the steps below.
 
 ## Setup
 1. Clone the Repository

@@ -1,40 +1,40 @@
 @echo Cloning repos
 
 git clone https://github.com/MysticMods/MysticalLib.git
-git clone https://github.com/MysticMods/MysticalWorld.git
-git clone https://github.com/MysticMods/Embers.git
-git clone https://github.com/MysticMods/Traverse.git
-git clone https://github.com/MysticMods/Firefly.git
+REM git clone https://github.com/MysticMods/MysticalWorld.git
+REM git clone https://github.com/MysticMods/Embers.git
+REM git clone https://github.com/MysticMods/Traverse.git
+REM git clone https://github.com/MysticMods/Firefly.git
 @echo skipping git clone https://github.com/MysticMods/Glimmering.git
-git clone https://github.com/duely/dwmh.git
-git clone https://github.com/AranaiRa/ArcaneArchives.git
-git clone https://github.com/MysticMods/GadgetryCore.git
-git clone https://github.com/MysticMods/MysticalMachinery.git
-git clone https://github.com/MysticMods/EmsFarming.git
-git clone https://github.com/MysticMods/Roots.git
+REM git clone https://github.com/duely/dwmh.git
+REM git clone https://github.com/AranaiRa/ArcaneArchives.git
+REM git clone https://github.com/MysticMods/GadgetryCore.git
+REM git clone https://github.com/MysticMods/MysticalMachinery.git
+REM git clone https://github.com/MysticMods/EmsFarming.git
+REM git clone https://github.com/MysticMods/Roots.git
 
-@echo Switching to 1.14.4 branches
+@echo Switching to 1.15.2 branches
 cd MysticalLib
-git checkout 1.14
+git checkout 1.15
 cd ../
-cd MysticalWorld
-git checkout 1.14
-cd ../
-cd Embers
-git checkout 1.14
-cd ../
-cd dwmh
-git checkout 1.14
-cd ..
-cd ArcaneArchives
-git checkout 1.14
-cd ..
-cd GadgetryCore
-git checkout 1.14
-cd ../
-cd Roots
-git checkout 1.14
-cd ../
+REM cd MysticalWorld
+REM git checkout 1.14
+REM cd ../
+REM cd Embers
+REM git checkout 1.14
+REM cd ../
+REM cd dwmh
+REM git checkout 1.14
+REM cd ..
+REM cd ArcaneArchives
+REM git checkout 1.14
+REM cd ..
+REM cd GadgetryCore
+REM git checkout 1.14
+REM cd ../
+REM cd Roots
+REM git checkout 1.14
+REM cd ../
 
 @echo genIntellijRuns for the WHOLE workspace
 
